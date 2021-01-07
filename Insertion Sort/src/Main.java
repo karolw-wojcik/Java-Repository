@@ -1,13 +1,14 @@
 public class Main {
     public static void insertionSort(int[] arr)
     {
-        for(int i=1;i< arr.length;i++)
+        for(int i=1;i<arr.length;i++)
         {
             int v = arr[i];
             int j = i;
 
             while(j > 0 && arr[j-1] > v)
             {
+                arr[j] = arr[j-1];
                 j--;
             }
 
